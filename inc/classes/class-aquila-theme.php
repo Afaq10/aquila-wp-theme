@@ -33,6 +33,15 @@ class AQUILA_THEME {
     public function setup_theme() {
         //add support for title tag
         add_theme_support( 'title-tag' );
+
+        //add support for custom logo
+        add_theme_support( 'custom-logo', [
+            'height'      => 100,
+            'width'       => 400,
+            'flex-height' => true,
+            'flex-width'  => true,
+            'header-text' => [ 'site-title', 'site-description' ],
+        ] );
     }
 
 }
