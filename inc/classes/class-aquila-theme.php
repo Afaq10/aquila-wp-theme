@@ -27,6 +27,12 @@ class AQUILA_THEME {
         /**
          * Actions
          */
+        add_action( 'after_setup_theme', [ $this, 'setup_theme' ] );
+    }
+
+    public function setup_theme() {
+        //add support for title tag
+        add_theme_support( 'title-tag' );
     }
 
 }
