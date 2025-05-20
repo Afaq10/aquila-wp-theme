@@ -42,6 +42,13 @@ class AQUILA_THEME {
             'flex-width'  => true,
             'header-text' => [ 'site-title', 'site-description' ],
         ] );
+
+        //add support for custom background
+        add_theme_support( 'custom-background', [
+            'default-color' => '#ffffff',
+            'default-image' => '',
+            'default-repeat' => 'no-repeat',
+        ] );
     }
 
 }
