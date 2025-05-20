@@ -49,6 +49,41 @@ class AQUILA_THEME {
             'default-image' => '',
             'default-repeat' => 'no-repeat',
         ] );
+
+        //add support for post thumbnails
+        add_theme_support( 'post-thumbnails' );
+
+        //add support for customize selective refresh
+        add_theme_support( 'customize-selective-refresh-widgets' );
+
+        //add support for automatic feed links
+        add_theme_support( 'automatic-feed-links' );
+        
+        //add support for HTML5
+        add_theme_support( 'html5', [
+            'comment-list',
+            'comment-form',
+            'search-form',
+            'gallery',
+            'caption',
+            'script',
+            'style',
+        ] );
+
+        //add support for editor styles
+        add_editor_style();
+
+        //add support for block styles
+        add_theme_support( 'wp-block-styles' );
+
+        //add support for align wide
+        add_theme_support( 'align-wide' );
+
+        //Global Variable Content Width to Set the Content Width of Your Theme
+        global $content_width;
+        if ( ! isset( $content_width ) ) {
+            $content_width = 1240; // Set the default content width to 1240 pixels
+        }
     }
 
 }
