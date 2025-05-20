@@ -18,6 +18,7 @@ class AQUILA_THEME {
         //Load classes
 
         Assets::get_instance();
+        Menus::get_instance();
 
         $this->setup_hooks();
     }
