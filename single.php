@@ -1,13 +1,13 @@
 <?php
 /**
- * Main template file.
+ * Single post template
  * 
  * @package Aquila
  */
 get_header();
 ?>
   <div class="content">
-    <?php esc_html_e( 'Content Blog', 'aquila' ); ?>
+    <?php esc_html_e( 'Single Post', 'aquila' ); ?>
   </div>
 
   <?php 
