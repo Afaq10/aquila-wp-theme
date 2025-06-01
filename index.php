@@ -31,9 +31,14 @@ get_header();
           
             //Start the loop.
             while ( have_posts() ) : the_post();
-              get_template_part( 'template-parts/content');
+            ?>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <?php get_template_part( 'template-parts/content'); ?>
+            </div>
+            <?php
             endwhile;
             ?>
+            </div>
           </div>
         </div>
         <?php
