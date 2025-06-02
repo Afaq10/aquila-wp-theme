@@ -20,6 +20,7 @@ require_once AQUILA_DIR_PATH . '/inc/helpers/template-tags.php';
 
 function aquila_get_theme_instance(){
    \AQUILA_THEME\Inc\AQUILA_THEME::get_instance();
+   \AQUILA_THEME\Inc\Meta_Boxes::get_instance();
 }
 
 aquila_get_theme_instance();
